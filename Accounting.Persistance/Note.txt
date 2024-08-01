@@ -1,0 +1,1 @@
+﻿Ilerdi database değişikliği yapınca sadece bu katmanda değişiklik yapmak yeterli olacaktır.

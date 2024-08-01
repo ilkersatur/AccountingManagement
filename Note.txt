@@ -1,0 +1,11 @@
+﻿CQRS => Command Query Responsibility Segregation => Güçler Ayrılığı
+
+Create(parameter) metodunu 3 class ile parçalara ayırma
+
+işlem yapılacak metodun requestini, işlemi ve responsunu birbirinden ayırma
+
+Yönetimi kolaylaştırıyoruz bu sayede
+
+mediatr kütüphanesi
+
+Iki tane klasör olacak Commands ve Query

@@ -1,0 +1,1 @@
+﻿Ihtiyaca yönelik bir katmandır. Web Api projesinden Controller kısmını bu projeye ekledik. Çünkü Web Api projesi dependency injection yöntemi ile tüm katmanları reference etmek zorunda kalıyoruz. Örneğin Infrastructure katmanında yaptığımız bir yapıyı Web api de çağırılabilir.

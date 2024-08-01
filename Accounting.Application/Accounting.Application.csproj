@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\AppFeatures\CompanyFeatures\Queries\" />
+    <Folder Include="Features\CompanyFeatures\" />
+    <Folder Include="Services\CompanyServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting.Domain\Accounting.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
