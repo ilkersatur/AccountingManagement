@@ -5,11 +5,6 @@ using Accounting.Domain.CompanyEntities;
 using Accounting.Domain.Repositories.UCAFRepositories;
 using Accounting.Persistance.Context;
 using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Accounting.Persistance.Services.CompanyServices
 {
@@ -35,6 +30,7 @@ namespace Accounting.Persistance.Services.CompanyServices
             _unitOfWork.SetDbContextInstance(_context);
 
             UniformChartOfAccount uniformChartOfAccount = _mapper.Map<UniformChartOfAccount>(request);
+            uniformChartOfAccount.Id = Guid.NewGuid().ToString();
 
             await _commandRepository.AddAsync(uniformChartOfAccount);
             await _unitOfWork.SaveChangesAsync();

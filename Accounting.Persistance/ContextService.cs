@@ -18,7 +18,7 @@ namespace Accounting.Persistance
         {
                 _appDbContext = appDbContext;
         }
-        public DbContext SetDbContextInstance(string companyId)
+        public DbContext CreateDbContextInstance(string companyId)
         {
             Company company = _appDbContext.Set<Company>().Find(companyId);
 

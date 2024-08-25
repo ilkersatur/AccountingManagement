@@ -6,10 +6,10 @@ namespace Accounting.Domain.Repositories
     {
         Task AddAsync(T entity);
         Task AddRangeAsync(IEnumerable<T> entities);
-        Task Update(T entity);
-        Task UpdateRange(IEnumerable<T> entities);
+        void Update(T entity);
+        void UpdateRange(IEnumerable<T> entities);
         Task RemoveById(string id);
-        Task Remove(T entity);
-        Task RemoveRange(IEnumerable<T> entities);
+        void Remove(T entity);
+        void RemoveRange(IEnumerable<T> entities);
     }
 }

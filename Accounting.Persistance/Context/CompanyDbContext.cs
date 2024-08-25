@@ -1,4 +1,5 @@
-﻿using Accounting.Domain.AppEntities;
+﻿using Accounting.Domain.Abstraction;
+using Accounting.Domain.AppEntities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
@@ -56,6 +57,29 @@ namespace Accounting.Persistance.Context
 
                 return new CompanyDbContext();
             }
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            var entries = ChangeTracker.Entries<Accounting.Domain.Abstraction.Entity>();
+
+            foreach (var entry in entries)
+            {
+                // Yeni bir ekleme işlemi yapıyorsak
+                if (entry.State == EntityState.Added)
+                {
+                    entry.Property(p => p.CreatedDate)
+                        .CurrentValue = DateTime.Now;
+                }
+
+                // Kaydı güncelleme işlemi yapıyorsak
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Property(p => p.UpdatedDate)
+                        .CurrentValue = DateTime.Now;
+                }
+            }
+            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }

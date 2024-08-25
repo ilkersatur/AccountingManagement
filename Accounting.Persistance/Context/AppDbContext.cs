@@ -20,7 +20,7 @@ namespace Accounting.Persistance.Context
         public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
         {
             //Her işlemde buraya girecek. Takip edilen entityleri bulacak
-            var entries = ChangeTracker.Entries<Entity>();
+            var entries = ChangeTracker.Entries<Accounting.Domain.Abstraction.Entity>();
 
             foreach (var entry in entries)
             {

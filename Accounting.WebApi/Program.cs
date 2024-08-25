@@ -1,4 +1,5 @@
 ﻿using Accounting.Application.Services.AppServices;
+using Accounting.Application.Services.CompanyServices;
 using Accounting.Domain;
 using Accounting.Domain.AppEntities.Identity;
 using Accounting.Domain.Repositories.UCAFRepositories;
@@ -6,6 +7,7 @@ using Accounting.Persistance;
 using Accounting.Persistance.Context;
 using Accounting.Persistance.Repositoryies.UCAFRepositories;
 using Accounting.Persistance.Services.AppServices;
+using Accounting.Persistance.Services.CompanyServices;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -20,9 +22,10 @@ builder.Services.AddIdentity<AppUser, AppRole>()
 
 builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IContectService, ContextService>();
 builder.Services.AddScoped<IUCAFCommandRepository, UCAFCommandRepository>();
 builder.Services.AddScoped<IUCAFQueryRepository, UCAFQueryRepository>();
-builder.Services.AddScoped<IContectService, ContextService>();
+builder.Services.AddScoped<IUCAFService, UCAFService>();
 
 builder.Services.AddAutoMapper(typeof(Accounting.Persistance.AssemblyReference).Assembly);
 
