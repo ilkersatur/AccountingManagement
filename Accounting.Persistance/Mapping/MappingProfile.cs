@@ -1,6 +1,8 @@
 ﻿using Accounting.Application.Features.AppFeatures.CompanyFeatures.Commands.CreateCompany;
+using Accounting.Application.Features.AppFeatures.RoleFeatures.Commands.CreateRole;
 using Accounting.Application.Features.CompanyFeatures.UCAFFeatures.Commands.CreateUCAF;
 using Accounting.Domain.AppEntities;
+using Accounting.Domain.AppEntities.Identity;
 using Accounting.Domain.CompanyEntities;
 using AutoMapper;
 using System;
@@ -17,6 +19,7 @@ namespace Accounting.Persistance.Mapping
         {
             CreateMap<CreateCompanyRequest, Company>().ReverseMap();
             CreateMap<CreateUCAFRequest, UniformChartOfAccount>().ReverseMap();
+            CreateMap<CreateRoleRequest, AppRole>().ReverseMap();
         }
     }
 }

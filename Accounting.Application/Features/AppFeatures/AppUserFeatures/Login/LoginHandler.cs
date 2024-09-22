@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Accounting.Application.Features.AppFeatures.CompanyFeatures.AppUserFeatures.Login
+namespace Accounting.Application.Features.AppFeatures.AppUserFeatures.Login
 {
     public class LoginHandler : IRequestHandler<LoginRequest, LoginResponse>
     {

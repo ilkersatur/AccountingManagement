@@ -1,6 +1,7 @@
 ﻿using Accounting.Domain.Abstraction;
 using Accounting.Domain.AppEntities;
 using Accounting.Domain.AppEntities.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -40,6 +41,15 @@ namespace Accounting.Persistance.Context
             }
 
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
+        }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Ignore<IdentityUserLogin<string>>();
+            builder.Ignore<IdentityUserRole<string>>();
+            builder.Ignore<IdentityUserClaim<string>>();
+            builder.Ignore<IdentityUserToken<string>>();
+            builder.Ignore<IdentityRoleClaim<string>>();
         }
 
         public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>

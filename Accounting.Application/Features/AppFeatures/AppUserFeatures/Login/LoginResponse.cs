@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Accounting.Application.Features.AppFeatures.CompanyFeatures.AppUserFeatures.Login
+namespace Accounting.Application.Features.AppFeatures.AppUserFeatures.Login
 {
     public sealed class LoginResponse
     {

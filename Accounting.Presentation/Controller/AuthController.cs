@@ -1,12 +1,7 @@
-﻿using Accounting.Application.Features.AppFeatures.CompanyFeatures.AppUserFeatures.Login;
+﻿using Accounting.Application.Features.AppFeatures.AppUserFeatures.Login;
 using Accounting.Presentation.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Accounting.Presentation.Controller
 {
