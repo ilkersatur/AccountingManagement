@@ -1,0 +1,52 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1062 >>
+stream
+BT /F1 24 Tf 50.00 792.00 Td (Project Documentation) Tj ET
+BT /F1 12 Tf 50.00 770.00 Td (Auto-generated PDF document) Tj ET
+0.5 w
+BT /F1 12 Tf 50.00 740.00 Td (This document was generated using a minimal custom PDF writer.) Tj ET
+BT /F1 12 Tf 50.00 724.00 Td () Tj ET
+BT /F1 12 Tf 50.00 708.00 Td (Contents:) Tj ET
+BT /F1 12 Tf 50.00 692.00 Td (  - Overview) Tj ET
+BT /F1 12 Tf 50.00 676.00 Td (  - Diagram) Tj ET
+BT /F1 12 Tf 50.00 660.00 Td (  - Notes) Tj ET
+BT /F1 12 Tf 50.00 644.00 Td () Tj ET
+BT /F1 12 Tf 50.00 628.00 Td (Overview:) Tj ET
+BT /F1 12 Tf 50.00 612.00 Td (  This is a sample PDF document created programmatically.) Tj ET
+BT /F1 12 Tf 50.00 596.00 Td (  You can adapt this script to include dynamic content.) Tj ET
+BT /F1 12 Tf 50.00 580.00 Td () Tj ET
+BT /F1 12 Tf 50.00 564.00 Td (Notes:) Tj ET
+BT /F1 12 Tf 50.00 548.00 Td (  - Font: Helvetica) Tj ET
+BT /F1 12 Tf 50.00 532.00 Td (  - Page size: A4) Tj ET
+BT /F1 12 Tf 50.00 516.00 Td (  - Generated: scripts/generate_pdfs.py) Tj ET
+BT /F1 9 Tf 500.00 40.00 Td (Generated custom PDF) Tj ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000001361 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1431
+%%EOF
